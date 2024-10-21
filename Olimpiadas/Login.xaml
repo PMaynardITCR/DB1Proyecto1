@@ -1,0 +1,22 @@
+﻿<Window x:Class="Olimpiadas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Olimpiadas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="720" Width="1280">
+    <Grid Margin="0,0,-80,-43">
+        <Frame Margin="0,0,80,45"/>
+        <Label Content="Ingrese sus datos" HorizontalAlignment="Center" Margin="0,150,100,0" VerticalAlignment="Top" Width="200" HorizontalContentAlignment="Center"/>
+        <Label Content="Usuario:" HorizontalAlignment="Center" Margin="0,256,100,0" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="loginUsuario" HorizontalAlignment="Center" Margin="0,280,100,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Contraseña:" HorizontalAlignment="Center" Margin="0,315,100,0" VerticalAlignment="Top" Width="200"/>
+        <TextBox x:Name="loginContrasenha" HorizontalAlignment="Center" Margin="0,356,100,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="200"/>
+        <RadioButton Content="Usuario" HorizontalAlignment="Center" Margin="0,400,200,0" VerticalAlignment="Top" Width="100" IsChecked="True" Checked="UsuarioRadioButton_Checked" x:Name="UsuarioRadioButton"/>
+        <RadioButton Content="Administrador" HorizontalAlignment="Center" Margin="0,400,0,0" VerticalAlignment="Top" Width="100" IsChecked="False" Checked="AdministradorRadioButton_Checked_1" x:Name="AdministradorRadioButton"/>
+        <Button Content="Ingresar" HorizontalAlignment="Center" Margin="0,457,100,0" VerticalAlignment="Top" Width="100" Height="30" Click="Button_Click"/>
+        <Label Content="Usuario o contraseña incorrecta" HorizontalAlignment="Center" Margin="0,210,100,0" VerticalAlignment="Top" Visibility="Hidden" Foreground="Red"/>
+
+    </Grid>
+</Window>

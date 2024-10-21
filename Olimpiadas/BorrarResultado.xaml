@@ -1,0 +1,34 @@
+﻿<Page x:Class="Olimpiadas.BorrarResultado"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Olimpiadas"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="BorrarResultado">
+
+    <Grid>
+        <Label Content="Borrar información" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="BorrarResultadoDropdown"  HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="120" Height="25" DropDownClosed="OptionSelected">
+            <ComboBoxItem Content="Persona" />
+            <ComboBoxItem Content="Competición" />
+            <ComboBoxItem Content="Evento"/>
+            <ComboBoxItem Content="Resultado" IsSelected="True"/>
+        </ComboBox>
+        <Label x:Name="LabelBorrarCompetencia" Content="ID:" HorizontalAlignment="Left" Margin="980,50,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="IDBorrarCompetencia" HorizontalAlignment="Left" Margin="1110,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
+
+        <Label Content="ID de competencia:" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="IDCompetenciaBorrarResultado" HorizontalAlignment="Left" Margin="120,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
+        <Label Content="ID de competidor o grupo:" HorizontalAlignment="Left" Margin="350,120,0,0" VerticalAlignment="Top" Width="160"/>
+        <TextBox x:Name="IDCompetidorBorrarResultado" HorizontalAlignment="Left" Margin="520,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
+        <CheckBox x:Name="EsGrupoBorrarResultado" Content="Deporte grupal" HorizontalAlignment="Left" Margin="680,125,0,0" VerticalAlignment="Top" Width="120" Height="25" IsChecked="False"/>
+        <Label Content="Resultado:" HorizontalAlignment="Left" Margin="20,220,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ScoreBorrarResultado" HorizontalAlignment="Left" Margin="120,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
+        <Label Content="Posición final:" HorizontalAlignment="Left" Margin="20,320,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="PosicionBorrarResultado" HorizontalAlignment="Left" Margin="120,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="820,500,0,0" VerticalAlignment="Top" Width="100" Height="40"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="930,500,0,0" VerticalAlignment="Top" Width="100" Height="40"/>
+    </Grid>
+</Page>

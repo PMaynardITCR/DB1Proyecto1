@@ -1,0 +1,26 @@
+﻿<Page x:Class="Olimpiadas.PersonasPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Olimpiadas"
+      mc:Ignorable="d" 
+      d:DesignHeight="620" d:DesignWidth="1280"
+      Title="PersonasPage">
+
+    <Grid>
+        <Label Content="Consulta de personas" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="FiltroTipoPersona"  HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="Tipo de persona" IsSelected="True"/>
+        </ComboBox>
+        <ComboBox x:Name="PaisPersonas"  HorizontalAlignment="Left" Margin="140,50,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="Pais" IsSelected="True"/>
+        </ComboBox>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="270,50,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="300,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="25"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="1050,20,0,0" VerticalAlignment="Top" Width="100" />
+        <DataGrid x:Name="dataGridPersonas" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,96,0,10" Height="520"/>
+
+
+    </Grid>
+</Page>

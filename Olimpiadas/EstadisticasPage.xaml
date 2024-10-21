@@ -1,0 +1,26 @@
+﻿<Page x:Class="Olimpiadas.EstadisticasPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Olimpiadas"
+      mc:Ignorable="d" 
+      d:DesignHeight="620" d:DesignWidth="1280"
+      Title="EstadisticasPage">
+
+    <Grid>
+        <Label Content="Estadísticas" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="EventoEstadisticas"  HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="Evento" IsSelected="True"/>
+        </ComboBox>
+        <ComboBox x:Name="CompeticionEstadisticas"  HorizontalAlignment="Left" Margin="140,50,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="Competicion" IsSelected="True"/>
+        </ComboBox>
+        <ComboBox x:Name="GeneroEstadisticas"  HorizontalAlignment="Left" Margin="270,50,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="Genero" IsSelected="True"/>
+        </ComboBox>
+        <ComboBox x:Name="EdadEstadisticas"  HorizontalAlignment="Left" Margin="400,50,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="Edad" IsSelected="True"/>
+        </ComboBox>
+    </Grid>
+</Page>

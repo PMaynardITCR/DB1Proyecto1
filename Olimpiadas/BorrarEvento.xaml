@@ -1,0 +1,30 @@
+﻿<Page x:Class="Olimpiadas.BorrarEvento"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Olimpiadas"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="BorrarEvento">
+
+    <Grid>
+        <Label Content="Borrar información" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="BorrarEventoDropdown"  HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="120" Height="25" DropDownClosed="OptionSelected">
+            <ComboBoxItem Content="Persona" />
+            <ComboBoxItem Content="Competición"/>
+            <ComboBoxItem Content="Evento" IsSelected="True"/>
+            <ComboBoxItem Content="Resultado"/>
+        </ComboBox>
+        <Label x:Name="LabelIDEventoBorrar" Content="ID de evento:" HorizontalAlignment="Left" Margin="980,50,0,0" VerticalAlignment="Top" Width="120" Visibility="Visible"/>
+        <TextBox x:Name="IDBorrarEvento" HorizontalAlignment="Left" Margin="1110,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25" Visibility="Visible" TextChanged="traerInfo"/>
+
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NombreEventoBorrarEvento" HorizontalAlignment="Left" Margin="120,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
+        <Label Content="Año:" HorizontalAlignment="Left" Margin="20,200,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="AnhoEventoBorrarEvento" HorizontalAlignment="Left" Margin="120,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="820,500,0,0" VerticalAlignment="Top" Width="100" Height="40" Click="borrarEvento"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="930,500,0,0" VerticalAlignment="Top" Width="100" Height="40"/>
+
+    </Grid>
+</Page>

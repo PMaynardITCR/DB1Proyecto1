@@ -1,0 +1,62 @@
+﻿<Page x:Class="Olimpiadas.BorrarCompetencia"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Olimpiadas"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="BorrarCompetencia">
+
+    <Grid>
+        <Label Content="Borrar información" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="BorrarCompetenciaDropdown"  HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="120" Height="25" DropDownClosed="OptionSelected">
+            <ComboBoxItem Content="Persona" />
+            <ComboBoxItem Content="Competición" IsSelected="True"/>
+            <ComboBoxItem Content="Evento"/>
+            <ComboBoxItem Content="Resultado"/>
+        </ComboBox>
+        <Label x:Name="LabelBorrarCompetencia" Content="ID de competencia:" HorizontalAlignment="Left" Margin="980,50,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="IDBorrarCompetencia" HorizontalAlignment="Left" Margin="1110,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
+
+        <Label Content="Nombre:" HorizontalAlignment="Left" Margin="20,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NombreCompetenciaBorrarCompetencia" HorizontalAlignment="Left" Margin="120,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="25"/>
+        <Label Content="Evento:" HorizontalAlignment="Left" Margin="350,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="EventoBorrar" HorizontalAlignment="Left" Margin="450,120,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="Evento" IsSelected="True"/>
+        </ComboBox>
+        <Label Content="Deporte:" HorizontalAlignment="Left" Margin="20,220,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="DeporteBorrar" HorizontalAlignment="Left" Margin="120,220,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="Evento" IsSelected="True"/>
+        </ComboBox>
+        <Label Content="Día del evento:" HorizontalAlignment="Left" Margin="260,220,0,0" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="DiaBorrarPersona" HorizontalAlignment="Left" Margin="400,220,0,0" TextWrapping="Wrap" Text="Día" VerticalAlignment="Top" Width="30" Height="25"/>
+        <Label Content="/" HorizontalAlignment="Left" Margin="430,220,0,0" VerticalAlignment="Top" Width="20"/>
+        <TextBox x:Name="MesBorrarPersona" HorizontalAlignment="Left" Margin="450,220,0,0" TextWrapping="Wrap" Text="Mes" VerticalAlignment="Top" Width="30" Height="25"/>
+        <Label Content="/" HorizontalAlignment="Left" Margin="480,220,0,0" VerticalAlignment="Top" Width="20"/>
+        <TextBox x:Name="AnhoBorrarPersona" HorizontalAlignment="Left" Margin="500,220,0,0" TextWrapping="Wrap" Text="Año" VerticalAlignment="Top" Width="60" Height="25"/>
+        <Label Content="Hora de inicio:" HorizontalAlignment="Left" Margin="630,220,0,0" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="HoraInicioBorrarCompetencia" HorizontalAlignment="Left" Margin="750,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" Height="25"/>
+        <Label Content="/" HorizontalAlignment="Left" Margin="780,220,0,0" VerticalAlignment="Top" Width="20"/>
+        <TextBox x:Name="MinutoInicioBorrarCompetencia" HorizontalAlignment="Left" Margin="800,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" Height="25"/>
+        <Label Content="Hora de finalización:" HorizontalAlignment="Left" Margin="900,220,0,0" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="HoraFinBorrarCompetencia" HorizontalAlignment="Left" Margin="1030,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" Height="25"/>
+        <Label Content="/" HorizontalAlignment="Left" Margin="1060,220,0,0" VerticalAlignment="Top" Width="20"/>
+        <TextBox x:Name="MinutoFinBorrarCompetencia" HorizontalAlignment="Left" Margin="1080,220,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" Height="25"/>
+        <Label Content="Sede:" HorizontalAlignment="Left" Margin="20,320,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="País:" HorizontalAlignment="Left" Margin="20,370,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="PaísBorrarCompetencia" HorizontalAlignment="Left" Margin="120,370,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="País" IsSelected="True"/>
+        </ComboBox>
+        <Label Content="Ciudad:" HorizontalAlignment="Left" Margin="270,370,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="CiudadBorrarCompetencia" HorizontalAlignment="Left" Margin="370,370,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="Ciudad" IsSelected="True"/>
+        </ComboBox>
+        <Label Content="Distrito:" HorizontalAlignment="Left" Margin="520,370,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="DistritoBorrarCompetencia" HorizontalAlignment="Left" Margin="620,370,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <ComboBoxItem Content="Distrito" IsSelected="True"/>
+        </ComboBox>
+        <Button Content="Borrar" HorizontalAlignment="Left" Margin="820,500,0,0" VerticalAlignment="Top" Width="100" Height="40"/>
+        <Button Content="Cancelar" HorizontalAlignment="Left" Margin="930,500,0,0" VerticalAlignment="Top" Width="100" Height="40"/>
+    </Grid>
+</Page>
